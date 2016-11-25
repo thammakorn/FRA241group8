@@ -7,18 +7,15 @@ import {Cookie} from 'ng2-cookies';
     templateUrl:'login.component.html'
 })
 export class logincomponent implements OnInit {
-        data:Object = {
-            username: " ",
-            password: " ",
-            checkk: " "
-        };
+    public username: any;
+    public password: any;
+    public checkk = true;
  constructor(private _router: Router){}
 
     formSubmit(){
-        var username = this.data.username;
-        var password = this.data.password;
+        var username = this.username;
+        var password = this.password;
         var key = btoa(btoa(username)+'??'+btoa(password));
-     console.log(this.data);
      console.log(key);
         document.cookie = "sessionID=" + key;
         // console.log(document.cookie)
@@ -28,7 +25,7 @@ export class logincomponent implements OnInit {
          if(username == 'teach'&& password == 'teach'){
              this._router.navigate(['/tech']);
          }else{
-             this.data.checkk = false ;
+             this.checkk = false ;
              console.log('Who are you ?');
          }
      }

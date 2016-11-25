@@ -13,17 +13,12 @@ var router_1 = require("@angular/router");
 var logincomponent = (function () {
     function logincomponent(_router) {
         this._router = _router;
-        this.data = {
-            username: " ",
-            password: " ",
-            checkk: " "
-        };
+        this.checkk = true;
     }
     logincomponent.prototype.formSubmit = function () {
-        var username = this.data.username;
-        var password = this.data.password;
+        var username = this.username;
+        var password = this.password;
         var key = btoa(btoa(username) + '??' + btoa(password));
-        console.log(this.data);
         console.log(key);
         document.cookie = "sessionID=" + key;
         // console.log(document.cookie)
@@ -35,7 +30,7 @@ var logincomponent = (function () {
                 this._router.navigate(['/tech']);
             }
             else {
-                this.data.checkk = false;
+                this.checkk = false;
                 console.log('Who are you ?');
             }
         }
