@@ -18,6 +18,7 @@ import { FormComponent }  from './form/form.component';
 import { Floor1Component } from './floor/floor1.component';
 import { Floor2Component } from './floor/floor2.component';
 import { Floor3Component } from './floor/floor3.component';
+import { FloorseachComponent } from './floor/floorseach.component';
 
 @NgModule({
     imports:      [ BrowserModule,
@@ -37,6 +38,7 @@ import { Floor3Component } from './floor/floor3.component';
                     Floor2Component,
                     Floor3Component,
                     HighlightDirective,
+                    FloorseachComponent,
 
     ],
 
