@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var app_routing_1 = require('./app.routing');
+var http_1 = require('@angular/http');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var login_component_1 = require("./login.component");
@@ -18,20 +19,35 @@ var search_component_1 = require("./search.component");
 var floorsearch_component_1 = require("./floorsearch.component");
 var datesearch_component_1 = require("./datesearch.component");
 var tech_component_1 = require("./tech.component");
+var highlight_directive_1 = require('./highlight.directive');
+var page1_component_1 = require('./page1/page1.component');
+var page2_component_1 = require('./page2/page2.component');
+var form_component_1 = require('./form/form.component');
+var floor1_component_1 = require('./floor/floor1.component');
+var floor2_component_1 = require('./floor/floor2.component');
+var floor3_component_1 = require('./floor/floor3.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule,
-                forms_1.FormsModule,
+                forms_1.FormsModule, http_1.HttpModule,
                 app_routing_1.routing],
             declarations: [app_component_1.AppComponent,
                 login_component_1.logincomponent,
                 search_component_1.searchcomponent,
                 floorsearch_component_1.floorsearchcomponent,
                 datesearch_component_1.datesearchcomponent,
-                tech_component_1.techcomponent],
+                page1_component_1.Page1Component,
+                page2_component_1.Page2Component,
+                form_component_1.FormComponent,
+                tech_component_1.techcomponent,
+                floor1_component_1.Floor1Component,
+                floor2_component_1.Floor2Component,
+                floor3_component_1.Floor3Component,
+                highlight_directive_1.HighlightDirective,
+            ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
