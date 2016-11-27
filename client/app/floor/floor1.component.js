@@ -9,36 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var form = (function () {
-    function form() {
+var Floor1Component = (function () {
+    function Floor1Component() {
     }
-    return form;
-}());
-exports.form = form;
-var Page1Component = (function () {
-    function Page1Component() {
-        this.click1 = false;
-        this.active = true;
-        this.inputForm = {
-            fristname: '',
-            lastname: '',
-            grade: '',
-            _id: ''
-        };
-    }
-    Page1Component.prototype.onSubmit = function () {
-        this.click1 = true;
-    };
-    Page1Component = __decorate([
+    Floor1Component = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'page1',
-            templateUrl: 'page1.component.html',
-            styleUrls: ['page1.component.css']
+            selector: 'floor1',
+            templateUrl: 'floor1.component.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], Page1Component);
-    return Page1Component;
+    ], Floor1Component);
+    return Floor1Component;
 }());
-exports.Page1Component = Page1Component;
-//# sourceMappingURL=page1.component.js.map
+exports.Floor1Component = Floor1Component;
+//# sourceMappingURL=floor1.component.js.map
