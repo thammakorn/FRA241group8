@@ -1,12 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { FormsModule }    from '@angular/forms';
 import { routing, appRoutingProviders }  from './app.routing';
-<<<<<<< HEAD
 import {HttpModule} from '@angular/http';
-=======
-import { HttpModule } from  '@angular/http';
-
->>>>>>> 2dec3ec7b67cbb2de97408bf4d3805e992abf0f9
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import {logincomponent} from "./login.component";
@@ -26,14 +21,9 @@ import { Floor3Component } from './floor/floor3.component';
 
 @NgModule({
     imports:      [ BrowserModule,
-<<<<<<< HEAD
                     FormsModule,
                     routing,
                     HttpModule],
-=======
-                    FormsModule,HttpModule,
-                    routing ],
->>>>>>> 2dec3ec7b67cbb2de97408bf4d3805e992abf0f9
     declarations: [ AppComponent,
                     logincomponent,
                     searchcomponent,
