@@ -54,7 +54,7 @@
             </thead>
         </table>
         <!---->
-        <table class="highlight">
+        <table class="highlight ">
             <thead>
             <tr>
                 <th data-field="id">Time</th>
@@ -63,59 +63,63 @@
             </thead>
 
             <tbody>
-            <tr>
+
+            <tr >
                 <td>8.30 - 9.30</td>
                 <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box"  />
-                    <label for="filled-in-box">Filled in</label>
+                    <a *ngIf='click1==true'  class="waves-effect waves-light btn red darken-3 " (click)="click1 = !click1" >book</a>
+                    <a *ngIf='click1==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click1 = !click1" >book</a>
+                    <!--<input type="checkbox" class="filled-in" id="filled-in-box" (click)="click1 = !click1" checked="checked"/>-->
+                    <!--&lt;!&ndash;<label for="filled-in-box" [checked]="choices.done" (click)="updateStatus(choices)">Filled in</label>&ndash;&gt;-->
+                    <!--<label for="filled-in-box" >Filled in</label>-->
                 </p></td>
 
-            </tr>
+            </tr >
             <tr>
                 <td>9.30 - 10.30</td>
                 <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box1"  />
-                    <label for="filled-in-box1">Filled in</label>
+                    <a *ngIf='click2==true'  class="waves-effect waves-light btn red darken-3 " (click)="click2 = !click2" >book</a>
+                    <a *ngIf='click2==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click2 = !click2" >book</a>
                 </p></td>
 
             </tr>
             <tr>
                 <td>10.30 - 11.30</td>
                 <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box3" />
-                    <label for="filled-in-box3">Filled in</label>
+                    <a *ngIf='click3==true'  class="waves-effect waves-light btn red darken-3 " (click)="click3 = !click3" >book</a>
+                    <a *ngIf='click3==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click3 = !click3" >book</a>
+                </p></td>
+
+            </tr>
+            <tr>
+                <td>11.30 - 12.30</td>
+                <td> <p>
+                    <a *ngIf='click4==true'  class="waves-effect waves-light btn red darken-3 " (click)="click4 = !click4" >book</a>
+                    <a *ngIf='click4==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click4 = !click4" >book</a>
                 </p></td>
 
             </tr>
             <tr>
                 <td>12.30 - 13.30</td>
                 <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box4" />
-                    <label for="filled-in-box4">Filled in</label>
+                    <a *ngIf='click5==true'  class="waves-effect waves-light btn red darken-3 " (click)="click5 = !click5" >book</a>
+                    <a *ngIf='click5==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click5 = !click5" >book</a>
+                </p></td>
+
+            </tr>
+            <tr>
+                <td>13.30 - 14.30</td>
+                <td> <p>
+                    <a *ngIf='click6==true'  class="waves-effect waves-light btn red darken-3 " (click)="click6 = !click6" >book</a>
+                    <a *ngIf='click6==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click6 = !click6" >book</a>
                 </p></td>
 
             </tr>
             <tr>
                 <td>14.30 - 15.30</td>
                 <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box5" />
-                    <label for="filled-in-box5">Filled in</label>
-                </p></td>
-
-            </tr>
-            <tr>
-                <td>16.30 - 17.30</td>
-                <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box6" />
-                    <label for="filled-in-box6">Filled in</label>
-                </p></td>
-
-            </tr>
-            <tr>
-                <td>17.30 - 18.30</td>
-                <td> <p>
-                    <input type="checkbox" class="filled-in" id="filled-in-box7" />
-                    <label for="filled-in-box7">Filled in</label>
+                    <a *ngIf='click7==true'  class="waves-effect waves-light btn red darken-3 " (click)="click7 = !click7" >book</a>
+                    <a *ngIf='click7==false'  class="waves-effect waves-light btn indigo lighten-4" (click)="click7 = !click7" >book</a>
                 </p></td>
 
             </tr>
@@ -140,14 +144,30 @@
         <table class="highlight">
             <thead>
             <tr>
-                <th data-field="time">time</th>
+                <th data-field="time">time :</th>
                 <th data-field="day1"><p>Date :</p>{{dateshow.date}}</th>
             </tr>
 
             <tr >
-                <td><ul><li *ngFor="">{{Times}}</li></ul></td>
-                <td></td>
-
+                <td *ngIf="click1==true">8.30 - 9.30</td>
+            </tr>
+            <tr >
+                <td *ngIf="click2==true">9.30 - 10.30</td>
+            </tr>
+            <tr >
+                <td *ngIf="click3==true">10.30 - 11.30</td>
+            </tr>
+            <tr >
+                <td *ngIf="click4==true">11.30 - 12.30</td>
+            </tr>
+            <tr >
+                <td *ngIf="click5==true">12.30 - 13.30</td>
+            </tr>
+            <tr >
+                <td *ngIf="click6==true">13.30 - 14.30</td>
+            </tr>
+            <tr >
+                <td *ngIf="click7==true">14.30 - 15.30</td>
             </tr>
             </thead>
         </table>
@@ -155,12 +175,13 @@
 
 
         <br>
-        <button class="btn btn-default  pink lighten-1" (click)=" submitted =false "  >Edit</button>
+        <button class="btn btn-default  pink lighten-1" (click)=" submitted =false;dateshow.time=''"   >Edit</button>
 
 
         <button class="btn waves-effect " type="submit" name="action" routerLink="/book/form" routerLinkActive="active">Form
             <i class="material-icons right">mode_edit</i>
         </button>
+        <br><br>
 
     </div>
 </div>

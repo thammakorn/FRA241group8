@@ -19,9 +19,13 @@ var search_component_1 = require("./search.component");
 var floorsearch_component_1 = require("./floorsearch.component");
 var datesearch_component_1 = require("./datesearch.component");
 var tech_component_1 = require("./tech.component");
+var highlight_directive_1 = require('./highlight.directive');
 var page1_component_1 = require('./page1/page1.component');
 var page2_component_1 = require('./page2/page2.component');
 var form_component_1 = require('./form/form.component');
+var floor1_component_1 = require('./floor/floor1.component');
+var floor2_component_1 = require('./floor/floor2.component');
+var floor3_component_1 = require('./floor/floor3.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -39,7 +43,12 @@ var AppModule = (function () {
                 page1_component_1.Page1Component,
                 page2_component_1.Page2Component,
                 form_component_1.FormComponent,
-                tech_component_1.techcomponent],
+                tech_component_1.techcomponent,
+                floor1_component_1.Floor1Component,
+                floor2_component_1.Floor2Component,
+                floor3_component_1.Floor3Component,
+                highlight_directive_1.HighlightDirective,
+            ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 
