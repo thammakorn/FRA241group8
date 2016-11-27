@@ -6,6 +6,14 @@ import {Router} from "@angular/router";
     templateUrl: 'managebook.component.html'
 })
 export class managebookComponent implements OnInit {
+    clickA = false;
+    clickB = false;
+    submitted = false;
+    onSubmit() { this.submitted = true;
+
+    }
+    active = true;
+
     constructor(public _router: Router) {
         var x = document.cookie.split(';');
         var cookievalue;
