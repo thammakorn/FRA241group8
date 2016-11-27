@@ -2,8 +2,6 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {logincomponent} from "./login.component";
 import {searchcomponent} from "./search.component";
-import {floorsearchcomponent} from "./floorsearch.component";
-import {datesearchcomponent} from "./datesearch.component";
 import {techcomponent} from "./tech.component";
 
 import { FloorseachComponent } from './floor/floorseach.component';
@@ -15,15 +13,15 @@ import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { FormComponent }  from './form/form.component';
 import { SignupComponent }  from './sign_up/sign_up.component';
+import {managebookComponent} from "./managebook/managebook.component";
 
 
 const appRoutes: Routes = [
     { path: '', component: logincomponent },
+    { path: 'managebookingroom', component: managebookComponent },
     { path: 'floorseach', component: FloorseachComponent },
     { path: 'login', component: logincomponent },
     { path: 'search', component: searchcomponent },
-    { path: 'search/floor', component: floorsearchcomponent},
-    { path: 'search/date', component: datesearchcomponent},
     { path: 'tech', component: techcomponent},
     { path: 'floorseach/floor1', component: Floor1Component },
     { path: 'floorseach/floor2', component: Floor2Component },
