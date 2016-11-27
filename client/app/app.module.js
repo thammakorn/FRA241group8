@@ -26,6 +26,7 @@ var form_component_1 = require('./form/form.component');
 var floor1_component_1 = require('./floor/floor1.component');
 var floor2_component_1 = require('./floor/floor2.component');
 var floor3_component_1 = require('./floor/floor3.component');
+var floorseach_component_1 = require('./floor/floorseach.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -48,6 +49,7 @@ var AppModule = (function () {
                 floor2_component_1.Floor2Component,
                 floor3_component_1.Floor3Component,
                 highlight_directive_1.HighlightDirective,
+                floorseach_component_1.FloorseachComponent,
             ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
