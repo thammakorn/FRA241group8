@@ -15,12 +15,9 @@ router.get('/user',function (req, res, next) {
 
 ////////username
 router.get('/user/username/:username',function (req, res, next) {
-  db.user.find({ username: req.params.username } , function (err, user) {
+  db.user.find({ username: req.params.username , level: 1 } , function (err, user) {
     if(err){
       res.send(err)
-    }
-    if(user != "[]") {
-        res.json('a');
     }
     else{
         res.json(user);
@@ -29,7 +26,7 @@ router.get('/user/username/:username',function (req, res, next) {
 })
 
 /////password
-router.get('/user/password/:password',function (req, res, next) {
+router.post('/user/password/:password',function (req, res, next) {
   var password = req.params.password;
   db.user.find({ password: password } , function (err, user) {
     if(err){
