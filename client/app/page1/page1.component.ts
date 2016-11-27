@@ -35,7 +35,7 @@ export class Page1Component {
             if (atob(res[0]) == 'student' && atob(res[1]) == 'student') {
                 //admin
             }
-            if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
+            else if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
                 //admin
             }
             else {
