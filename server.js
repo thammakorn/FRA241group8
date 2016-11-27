@@ -26,6 +26,7 @@ app.use('/floorseach/floor1', index);
 app.use('/floorseach/floor2', index);
 app.use('/floorseach/floor3', index);
 app.use('/book', index);
+app.use('/signup', index);
 app.use('/book/form', index);
 app.use('/book/form/commitform', index);
 

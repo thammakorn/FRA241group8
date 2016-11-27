@@ -12,6 +12,7 @@ var floor3_component_1 = require('./floor/floor3.component');
 var page1_component_1 = require('./page1/page1.component');
 var page2_component_1 = require('./page2/page2.component');
 var form_component_1 = require('./form/form.component');
+var sign_up_component_1 = require('./sign_up/sign_up.component');
 var appRoutes = [
     { path: '', component: login_component_1.logincomponent },
     { path: 'floorseach', component: floorseach_component_1.FloorseachComponent },
@@ -23,6 +24,7 @@ var appRoutes = [
     { path: 'floorseach/floor1', component: floor1_component_1.Floor1Component },
     { path: 'floorseach/floor2', component: floor2_component_1.Floor2Component },
     { path: 'floorseach/floor3', component: floor3_component_1.Floor3Component },
+    { path: 'signup', component: sign_up_component_1.SignupComponent },
     { path: 'book', component: page2_component_1.Page2Component },
     { path: 'book/form', component: page1_component_1.Page1Component },
     { path: 'book/form/commitform', component: form_component_1.FormComponent },
