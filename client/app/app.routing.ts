@@ -16,7 +16,7 @@ import { Page2Component } from './page2/page2.component';
 import { FormComponent }  from './form/form.component';
 
 const appRoutes: Routes = [
-    // { path: '', component: logincomponent },
+    { path: '', component: logincomponent },
 
     { path: 'floorseach', component: FloorseachComponent },
     { path: 'login', component: logincomponent },
