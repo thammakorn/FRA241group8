@@ -19,6 +19,8 @@ import { Floor1Component } from './floor/floor1.component';
 import { Floor2Component } from './floor/floor2.component';
 import { Floor3Component } from './floor/floor3.component';
 import { FloorseachComponent } from './floor/floorseach.component';
+import {SignupComponent} from  "./sign_up/sign_up.component";
+
 
 @NgModule({
     imports:      [ BrowserModule,
@@ -33,6 +35,7 @@ import { FloorseachComponent } from './floor/floorseach.component';
                     Page1Component,
                     Page2Component,
                     FormComponent,
+                    SignupComponent,
                     techcomponent,
                     Floor1Component,
                     Floor2Component,

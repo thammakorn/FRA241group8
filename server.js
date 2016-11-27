@@ -23,6 +23,7 @@ app.use('/tech', index);
 
 
 app.use('/book', index);
+app.use('/signup', index);
 app.use('/book/form', index);
 app.use('/book/form/commitform', index);
 
