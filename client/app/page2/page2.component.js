@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require("@angular/router");
 // import  { Service } from '../service/service'
 // import  { Choice} from '../choice'
 var Date = (function () {
@@ -18,22 +19,23 @@ var Date = (function () {
 }());
 exports.Date = Date;
 var Page2Component = (function () {
-    function Page2Component() {
-        // choices : Choice[];
-        // constructor(private service : Service){
-        //     this.service.getReadable()
-        //         .subscribe(choices => {
-        //             console.log(choices);
-        //             this.choices = choices;
-        //         });
-        // }
-        // updateStatus(choices){
-        //     var _choices = {
-        //         done : !choices.done};
-        //     this.service.updateStatus(_choices).subscribe(data =>{
-        //         choices.done = !choices.done;
-        //     });
-        // }
+    // choices : Choice[];
+    // constructor(private service : Service){
+    //     this.service.getReadable()
+    //         .subscribe(choices => {
+    //             console.log(choices);
+    //             this.choices = choices;
+    //         });
+    // }
+    // updateStatus(choices){
+    //     var _choices = {
+    //         done : !choices.done};
+    //     this.service.updateStatus(_choices).subscribe(data =>{
+    //         choices.done = !choices.done;
+    //     });
+    // }
+    function Page2Component(_router) {
+        this._router = _router;
         this.dateshow = {
             time: '',
             date: '-',
@@ -49,6 +51,26 @@ var Page2Component = (function () {
         this.click6 = false;
         this.click7 = false;
         this.active = true;
+        var x = document.cookie.split(';');
+        var cookievalue;
+        var i = 0;
+        for (; i < x.length; i++) {
+            if (x[i].split('=')[0].trim() == 'sessionID') {
+                cookievalue = x[i].split('=')[1];
+                break;
+            }
+        }
+        if (cookievalue === undefined) {
+            this._router.navigate(['']);
+        }
+        else {
+            var res = atob(cookievalue).split('??');
+            if (atob(res[0]) == 'student' && atob(res[1]) == 'student') {
+            }
+            else {
+                this._router.navigate(['']);
+            }
+        }
     }
     Page2Component.prototype.onSubmit = function () {
         this.submitted = true;
@@ -59,7 +81,7 @@ var Page2Component = (function () {
             selector: 'page2',
             templateUrl: 'page2.component.html',
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], Page2Component);
     return Page2Component;
 }());

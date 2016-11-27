@@ -27,6 +27,7 @@ var floor1_component_1 = require('./floor/floor1.component');
 var floor2_component_1 = require('./floor/floor2.component');
 var floor3_component_1 = require('./floor/floor3.component');
 var floorseach_component_1 = require('./floor/floorseach.component');
+var sign_up_component_1 = require("./sign_up/sign_up.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -44,6 +45,7 @@ var AppModule = (function () {
                 page1_component_1.Page1Component,
                 page2_component_1.Page2Component,
                 form_component_1.FormComponent,
+                sign_up_component_1.SignupComponent,
                 tech_component_1.techcomponent,
                 floor1_component_1.Floor1Component,
                 floor2_component_1.Floor2Component,
