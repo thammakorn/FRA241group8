@@ -21,7 +21,10 @@ app.use('/search/date',index);
 app.use('/login',index);
 app.use('/tech', index);
 
-
+app.use('/floorseach', index);
+app.use('/floorseach/floor1', index);
+app.use('/floorseach/floor2', index);
+app.use('/floorseach/floor3', index);
 app.use('/book', index);
 app.use('/book/form', index);
 app.use('/book/form/commitform', index);
