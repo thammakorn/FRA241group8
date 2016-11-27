@@ -10,7 +10,7 @@ export class logincomponent implements OnInit {
     public username: any;
     public password: any;
     public checkk = true;
- constructor(private _router: Router){}
+ constructor(private _router: Router ){}
 
     formSubmit(){
         var username = this.username;

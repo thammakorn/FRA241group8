@@ -19,7 +19,12 @@ router.get('/user/username/:username',function (req, res, next) {
     if(err){
       res.send(err)
     }
-    res.json(user);
+    if(user != "[]") {
+        res.json('a');
+    }
+    else{
+        res.json(user);
+    }
   })
 })
 

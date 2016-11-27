@@ -10,9 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require("@angular/router");
+var login_service_1 = require('./Service/login.service');
 var logincomponent = (function () {
-    function logincomponent(_router) {
+    function logincomponent(_router, loginservice) {
         this._router = _router;
+        this.loginservice = loginservice;
         this.checkk = true;
     }
     logincomponent.prototype.formSubmit = function () {
@@ -47,7 +49,7 @@ var logincomponent = (function () {
             selector: 'login',
             templateUrl: 'login.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [router_1.Router, login_service_1.LoginService])
     ], logincomponent);
     return logincomponent;
 }());
