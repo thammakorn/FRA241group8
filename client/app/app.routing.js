@@ -13,7 +13,7 @@ var page1_component_1 = require('./page1/page1.component');
 var page2_component_1 = require('./page2/page2.component');
 var form_component_1 = require('./form/form.component');
 var appRoutes = [
-    // { path: '', component: logincomponent },
+    { path: '', component: login_component_1.logincomponent },
     { path: 'floorseach', component: floorseach_component_1.FloorseachComponent },
     { path: 'login', component: login_component_1.logincomponent },
     { path: 'search', component: search_component_1.searchcomponent },
