@@ -2,8 +2,6 @@
 var router_1 = require('@angular/router');
 var login_component_1 = require("./login.component");
 var search_component_1 = require("./search.component");
-var floorsearch_component_1 = require("./floorsearch.component");
-var datesearch_component_1 = require("./datesearch.component");
 var tech_component_1 = require("./tech.component");
 var floorseach_component_1 = require('./floor/floorseach.component');
 var floor1_component_1 = require('./floor/floor1.component');
@@ -13,13 +11,13 @@ var page1_component_1 = require('./page1/page1.component');
 var page2_component_1 = require('./page2/page2.component');
 var form_component_1 = require('./form/form.component');
 var sign_up_component_1 = require('./sign_up/sign_up.component');
+var managebook_component_1 = require("./managebook/managebook.component");
 var appRoutes = [
     { path: '', component: login_component_1.logincomponent },
+    { path: 'managebookingroom', component: managebook_component_1.managebookComponent },
     { path: 'floorseach', component: floorseach_component_1.FloorseachComponent },
     { path: 'login', component: login_component_1.logincomponent },
     { path: 'search', component: search_component_1.searchcomponent },
-    { path: 'search/floor', component: floorsearch_component_1.floorsearchcomponent },
-    { path: 'search/date', component: datesearch_component_1.datesearchcomponent },
     { path: 'tech', component: tech_component_1.techcomponent },
     { path: 'floorseach/floor1', component: floor1_component_1.Floor1Component },
     { path: 'floorseach/floor2', component: floor2_component_1.Floor2Component },

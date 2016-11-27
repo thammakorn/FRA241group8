@@ -16,12 +16,14 @@ app.engine('html' ,require('ejs').renderFile);
 
 app.use('/', index);
 app.use('/search', index);
-app.use('/search/floor',index);
-app.use('/search/date',index);
 app.use('/login',index);
 app.use('/tech', index);
 
-
+app.use('/managebookingroom', index);
+app.use('/floorseach', index);
+app.use('/floorseach/floor1', index);
+app.use('/floorseach/floor2', index);
+app.use('/floorseach/floor3', index);
 app.use('/book', index);
 app.use('/signup', index);
 app.use('/book/form', index);

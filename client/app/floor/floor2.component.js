@@ -9,8 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require("@angular/router");
 var Floor2Component = (function () {
-    function Floor2Component() {
+    function Floor2Component(_router) {
+        this._router = _router;
+        var x = document.cookie.split(';');
+        var cookievalue;
+        var i = 0;
+        for (; i < x.length; i++) {
+            if (x[i].split('=')[0].trim() == 'sessionID') {
+                cookievalue = x[i].split('=')[1];
+                break;
+            }
+        }
+        if (cookievalue === undefined) {
+            this._router.navigate(['']);
+        }
+        else {
+            var res = atob(cookievalue).split('??');
+            if (atob(res[0]) == 'student' && atob(res[1]) == 'student') {
+            }
+            if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
+            }
+            else {
+                this._router.navigate(['']);
+            }
+        }
     }
     Floor2Component = __decorate([
         core_1.Component({
@@ -18,7 +42,7 @@ var Floor2Component = (function () {
             selector: 'floor2',
             templateUrl: 'floor2.component.html',
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], Floor2Component);
     return Floor2Component;
 }());
