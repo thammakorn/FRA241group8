@@ -6,8 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './app.component';
 import {logincomponent} from "./login.component";
 import {searchcomponent} from "./search.component";
-import {floorsearchcomponent} from "./floorsearch.component";
-import {datesearchcomponent} from "./datesearch.component";
 import {techcomponent} from "./tech.component";
 import { HighlightDirective } from './highlight.directive';
 
@@ -20,6 +18,7 @@ import { Floor2Component } from './floor/floor2.component';
 import { Floor3Component } from './floor/floor3.component';
 import { FloorseachComponent } from './floor/floorseach.component';
 import {SignupComponent} from  "./sign_up/sign_up.component";
+import {managebookComponent} from "./managebook/managebook.component";
 
 
 @NgModule({
@@ -30,8 +29,6 @@ import {SignupComponent} from  "./sign_up/sign_up.component";
     declarations: [ AppComponent,
                     logincomponent,
                     searchcomponent,
-                    floorsearchcomponent,
-                    datesearchcomponent,
                     Page1Component,
                     Page2Component,
                     FormComponent,
@@ -42,6 +39,7 @@ import {SignupComponent} from  "./sign_up/sign_up.component";
                     Floor3Component,
                     HighlightDirective,
                     FloorseachComponent,
+                    managebookComponent
 
     ],
 

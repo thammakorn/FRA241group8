@@ -16,8 +16,6 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var login_component_1 = require("./login.component");
 var search_component_1 = require("./search.component");
-var floorsearch_component_1 = require("./floorsearch.component");
-var datesearch_component_1 = require("./datesearch.component");
 var tech_component_1 = require("./tech.component");
 var highlight_directive_1 = require('./highlight.directive');
 var page1_component_1 = require('./page1/page1.component');
@@ -28,6 +26,7 @@ var floor2_component_1 = require('./floor/floor2.component');
 var floor3_component_1 = require('./floor/floor3.component');
 var floorseach_component_1 = require('./floor/floorseach.component');
 var sign_up_component_1 = require("./sign_up/sign_up.component");
+var managebook_component_1 = require("./managebook/managebook.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -40,8 +39,6 @@ var AppModule = (function () {
             declarations: [app_component_1.AppComponent,
                 login_component_1.logincomponent,
                 search_component_1.searchcomponent,
-                floorsearch_component_1.floorsearchcomponent,
-                datesearch_component_1.datesearchcomponent,
                 page1_component_1.Page1Component,
                 page2_component_1.Page2Component,
                 form_component_1.FormComponent,
@@ -52,6 +49,7 @@ var AppModule = (function () {
                 floor3_component_1.Floor3Component,
                 highlight_directive_1.HighlightDirective,
                 floorseach_component_1.FloorseachComponent,
+                managebook_component_1.managebookComponent
             ],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
