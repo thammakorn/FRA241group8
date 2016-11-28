@@ -19,6 +19,7 @@ import { Floor3Component } from './floor/floor3.component';
 import { FloorseachComponent } from './floor/floorseach.component';
 import {SignupComponent} from  "./sign_up/sign_up.component";
 import {managebookComponent} from "./managebook/managebook.component";
+import {FormtComponent} from "./formteacher/formt.component";
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {managebookComponent} from "./managebook/managebook.component";
                     Page1Component,
                     Page2Component,
                     FormComponent,
+                    FormtComponent,
                     SignupComponent,
                     techcomponent,
                     Floor1Component,

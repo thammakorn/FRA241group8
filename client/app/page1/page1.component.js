@@ -43,7 +43,7 @@ var Page1Component = (function () {
             var res = atob(cookievalue).split('??');
             if (atob(res[0]) == 'student' && atob(res[1]) == 'student') {
             }
-            if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
+            else if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
             }
             else {
                 this._router.navigate(['']);

@@ -10,9 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require("@angular/router");
-var Floor2Component = (function () {
-    function Floor2Component(_router) {
+var managebookComponent = (function () {
+    function managebookComponent(_router) {
         this._router = _router;
+        this.clickA = false;
+        this.clickB = false;
+        this.submitted = false;
+        this.active = true;
         var x = document.cookie.split(';');
         var cookievalue;
         var i = 0;
@@ -27,24 +31,26 @@ var Floor2Component = (function () {
         }
         else {
             var res = atob(cookievalue).split('??');
-            if (atob(res[0]) == 'student' && atob(res[1]) == 'student') {
-            }
-            else if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
+            if (atob(res[0]) == 'teach' && atob(res[1]) == 'teach') {
             }
             else {
                 this._router.navigate(['']);
             }
         }
     }
-    Floor2Component = __decorate([
+    managebookComponent.prototype.onSubmit = function () {
+        this.submitted = true;
+    };
+    managebookComponent.prototype.ngOnInit = function () { };
+    managebookComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'floor2',
-            templateUrl: 'floor2.component.html',
+            selector: 'bookmanage',
+            templateUrl: 'managebook.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router])
-    ], Floor2Component);
-    return Floor2Component;
+    ], managebookComponent);
+    return managebookComponent;
 }());
-exports.Floor2Component = Floor2Component;
-//# sourceMappingURL=floor2.component.js.map
+exports.managebookComponent = managebookComponent;
+//# sourceMappingURL=managebook.component.js.map
